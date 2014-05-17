@@ -1,0 +1,109 @@
+% Low-mass stars with direct magnetic field measurements. Data is pulled from the Reiners (2012, LRSP, 1)
+% and Anderson et al. (2010, A&A, 522, A81). The Reiners review data is a compilation from other literature
+% sources, primarily Reiners, Basri, & Browning (2009, 692, 538) and Reiners & Basri (2007, ApJ, 656, 1121).
+%
+% Compiled by: Gregory A. Feiden, Dartmouth College  <gregory.a.feiden.gr@dartmouth.edu>
+%
+% Notes:
+% ------
+% Spectral types and radii are those quoted by the original sources or were estimated based on spectral type
+% using a comparison with similar star (late M) or estimation based on DSEP models (G and K stars). Parallax
+% data was acquired from SIMBAD and represent the latest Hipparcos parallax estimates (van Leeuwen 2007). 
+% X-ray count rates and hardness ratios are from the ROSAT All-Sky Survey Bright and Faint Source Catalogues
+% (Voges et al. 1999, 2000). Conversion to X-ray fluxes was performed following the conversion defined by
+% Schmitt et al. (1995).
+% 
+% Column headers:
+% ---------------
+%
+% Star	    Other   SpT	    <Bf>	Radius	  Phi      log(Phi)	 Pi	     d	     Xcr	 HR1	  Fx	      Lx       log(Lx)
+% Name	    Name    ()    	(kG)	(Rsun)	  (Mx)	    (Mx)	(mas)	(pc)   (cnt/s)	 ()   (erg/s/cm**2)	(erg/s)	   (erg/s)
+%-------------------------------------------------------------------------------------------------------------------------------
+
+\begin{landscape}
+\onehalfspacing
+\begin{center}
+    \begin{longtable}{l l l c c c c c c c c} 
+        \caption[Example of a table using longtable.]
+         {Example of a long table in landscape mode.}
+        \label{tab:lms_xray_data}\\
+        
+        % Define the header at the top of the first page.
+        \hline
+        \hline
+        Star & Other & SpT & $\langle Bf \rangle$ & $R_\star$ & $\log(\Phi)$ & $\pi$ & $X_{\rm cr}$ & HR & $F_x$ & $\log(L_x)$ \\
+        Name & Name & & (kG) & $(\rsun)$ & (Mx) & (mas) & $\mathrm{(cnts\, s^{-1})}$ &  & $\mathrm{(erg\, s^{-1}\, cm^{-2})}$ & $\mathrm{(erg\, s^{-1})}$ \\
+        \hline
+        \endfirsthead
+        
+        % Define the header at the top of all but the first page
+        \multicolumn{11}{c}{\bf \tablename\ \thetable{} -- continued} \\
+        \hline 
+        \hline
+        Star & Other & SpT & $\langle Bf \rangle$ & $R_\star$ & $\log(\Phi)$ & $\pi$ & $X_{\rm cr}$ & HR & $F_x$ & $\log(L_x)$ \\
+        Name & Name & & (kG) & $(\rsun)$ & (Mx) & (mas) & $\mathrm{(cnts\, s^{-1})}$ &  & $\mathrm{(erg\, s^{-1}\, cm^{-2})}$ & $\mathrm{(erg\, s^{-1})}$ \\
+        \hline
+        \endhead
+        
+        % Define footer at the bottom of each page
+        \hline
+        \multicolumn{11}{c}{\bf \footnotesize continued on next page} \\
+        \endfoot
+        
+        % Define footer at the bottom of the table
+        \hline
+        \endlastfoot
+%
+%  Star          Other   SpT     <Bf>      R       logPhi    Par     Xcr       HR      Fx       logLx
+%  Name          Name            (kG)     (Ro)      (Mx)    (mas)   (c/s)         (erg/s/cm**2)(erg/s)
+HD 115383    & 	59 Vir & G0	  &  0.5	& 0.74 &	25.22 &	56.95  & 1.12 &	-0.14 &	8.48E-12 &	29.50 \\
+HD 115617    & 	61 Vir & G6	  &  0.1	& 0.95 &	24.74 &	116.89 & 0.01 &	-0.96 &	4.58E-14 &	26.60 \\
+$\sigma$ Dra & 	-	   & K0	  &  0.1	& 0.80 &	24.59 &	173.77 & 0.26 &	-0.80 &	1.06E-12 &	27.62 \\
+40 Eri	     &  -	   & K1	  &  0.1	& 0.75 &	24.53 &	200.62 & 0.80 & -0.28 &	5.46E-12 &	28.21 \\
+$\epsilon$ Eri&  -	   & K2	  &  0.1	& 0.70 &	24.59 &	310.94 & 2.82 &	-0.44 &	1.69E-11 &	28.32 \\
+LQ Hya	     &  -	   & K2	  &  2.5	& 0.70 &	25.86 &	53.70  & 2.73 &	-0.04 &	2.21E-11 &	29.96 \\
+GJ 566 B     &$\xi$ Boo B& K4 &  0.5	& 0.70 &	25.14 &	149.26 & 2.44 &	-0.31 &	1.63E-11 &	28.94 \\
+Gl 171.2 A   & 	-	   & K5	  &  1.4	& 0.65 &	25.56 &	55.66  & 2.69 &	-0.04 &	2.18E-11 &	29.93 \\
+Gl 182	     &  -      & M0.0 &  2.5	& 0.60 &	25.74 &	38.64  & 0.65 &	-0.19 &	4.75E-12 &	29.58 \\
+Gl 803	     &  AU Mic & M1.0 &  2.3	& 0.50 &	25.54 &	100.91 & 5.95 &	-0.07 &	4.72E-11 &	29.74 \\
+Gl 569 A	 &  -	   & M2.0 &  1.8	& 0.40 &	25.24 &	-	   & 0.49 &	-0.40 &	3.03E-12 &    -   \\
+Gl 494	     &  DT Vir & M2.0 &  1.5	& 0.40 &	25.16 &	85.54  & 1.57 &	-0.01 &	1.30E-11 &	29.33 \\
+Gl 70	     &  -	   & M2.0 &  0.2	& 0.33 &	24.12 &	87.62  & 0.04 &	-0.67 &	2.08E-13 &	27.51 \\
+Gl 873	     &  EV Lac & M3.5 &  3.8	& 0.31 &	25.35 &	195.22 & 5.83 &	-0.16 &	4.35E-11 &	29.14 \\
+Gl 729	     &V1216 Sgr& M3.5 &  2.1	& 0.20 &	24.71 &	336.72 & 0.94 &	-0.43 &	5.67E-12 &	27.78 \\
+Gl 87	     &  -	   & M3.5 &  3.9	& 0.30 &	25.33 &	96.02  & -    &   -	  &   -	     &    -   \\
+Gl 388	     &  AD Leo & M3.5 &  3.0	& 0.39 &	25.44 &	213.00 & 3.70 &	-0.27 &	2.55E-11 &	28.83 \\
+GJ 3379	     &  -	   & M3.5 &  2.3	& 0.25 &	24.94 &	190.93 & 0.40 &	-0.20 &	2.90E-12 &	27.98 \\
+GJ 2069 B    & 	CV Cnc & M4.0 &  2.7	& 0.25 &	25.01 &	78.10  & 0.24 &	-0.14 &	1.82E-12 &	27.95 \\
+Gl 876	     &  IL Aqr & M4.0 &  0.2	& 0.31 &	24.07 &	213.28 & -	  &   -	  &   -	     &    -   \\
+GJ 1005 A    & 	-	   & M4.0 &  0.2	& 0.23 &	23.81 &	191.86 & -	  &   -	  &   -	     &    -   \\
+Gl 490 B	 &G 164-31 & M4.0 &  3.2	& 0.20 &	24.89 &	50.00  & 0.84 &	-0.22 &	6.00E-12 &	29.46 \\
+Gl 493.1	 &  FN Vir & M4.5 &  2.1	& 0.20 &	24.71 &	123.10 & 0.14 &	-0.16 &	1.04E-12 &	27.92 \\
+GJ 4053	     &LHS 3376 & M4.5 &  2.0	& 0.17 &	24.55 &	137.30 & 0.06 &	-0.49 &	3.43E-13 &	27.34 \\
+GJ 299	     &  -	   & M4.5 &  0.5	& 0.18 &	23.99 &	148.00 & -	  &   -	  &   -	     &    -   \\
+GJ 1227	     &  -	   & M4.5 &  0.2	& 0.19 &	23.64 &	120.00 & -	  &   -	  &   -	     &    -   \\
+GJ 1224	     &  -	   & M4.5 &  2.7	& 0.18 &	24.73 &	132.60 & 0.21 &	-0.45 &	1.24E-12 &	27.93 \\
+Gl 285	     &  YZ Cmi & M4.5 &  4.5	& 0.30 &	25.39 &	167.88 & 1.47 &	-0.21 &	1.06E-11 &	28.65 \\
+GJ 1154 A    & 	-	   & M5.0 &  2.1	& 0.20 &	24.71 &	-	   & 0.10 &	-0.23 &	7.09E-13 &    -   \\
+GJ 1156	     &  GL Vir & M5.0 &  2.1	& 0.16 &	24.51 &	152.90 & 0.13 &	-0.25 &	9.08E-13 &	27.67 \\
+Gl 905	     &  HH And & M5.5 &  0.1	& 0.17 &	23.24 &	316.70 & 0.18 &	0.15  & 1.64E-12 &	27.29 \\
+GJ 1057	     &  CD Cet & M5.5 &  0.1	& 0.18 &	23.29 &	117.10 & -	  &   -	  &   -	     &    -   \\
+GJ 1245 B    & 	-	   & M5.5 &  1.7	& 0.14 &	24.31 &	220.00 & 0.20 &	-0.37 &	1.27E-12 &	27.50 \\
+GJ 1286	     &  -	   & M5.5 &  0.4	& 0.14 &	23.68 &	138.30 & -	  &   -	  &   -	     &    -   \\
+GJ 1002	     &  -	   & M5.5 &  0.2	& 0.13 &	23.31 &	213.00 & -	  &   -	  &   -	     &    -   \\
+Gl 406	     & CN Leo  & M5.5 &  2.4	& 0.13 &	24.39 &	418.30 & 0.23 &	-0.22 &	1.64E-12 &	27.05 \\
+Gl 412 B	 &  WX Uma & M6.0 &  3.9	& 0.13 &	24.60 &	206.94 & 0.18 &	-0.64 &	8.85E-13 &	27.39 \\
+GJ 1111	     &  DX Cnc & M6.0 &  1.7	& 0.12 &	24.17 &	275.80 & -	  &   -	  &   -	     &    -   \\
+Gl 644C	     &  VB 8   & M7.0 &  2.3	& 0.10 &	24.15 &	153.96 & -	  &   -	  &   -	     &    -   \\
+GJ 3877	     &LHS 3003 & M7.0 &  1.5	& 0.10 &	23.96 &	157.80 & -	  &   -	  &   -	     &    -   \\
+GJ 3622	     &  -	   & M7.0 &  0.6	& 0.10 &	23.56 &	221.00 & -	  &   -	  &   -	     &    -   \\
+LHS 2645	 &  -      & M7.5 &  2.1	& 0.08 &	23.91 &	-	   & -	  &   -	  &   -	     &    -   \\
+LP 412-31    & 	-	   & M8.0 &  3.9	& 0.08 &	24.18 &	-	   & -	  &   -	  &   -	     &    -   \\
+VB 10	     &V1298 Aql& M8.0 &  1.3	& 0.08 &	23.70 &	164.30 & -	  &   -	  &   -	     &    -   \\
+LHS 2924	 &  -	   & M9.0 &  1.6	& 0.08 &	23.79 &	90.00  & -	  &   -	  &   -	     &    -   \\
+LHS 2065	 &  -	   & M9.0 &  3.9	& 0.08 &	24.18 &	116.80 & -	  &   -	  &   -	     &    - 
+    \end{longtable}
+\end{center}
+\end{landscape}
+
+\doublespacing

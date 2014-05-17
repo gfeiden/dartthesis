@@ -1,0 +1,116 @@
+%------------------------------------------------------------------------%
+% Front matter for Ph.D. thesis, incl., title page, copyright, preface,  %
+% table of contents, list of tables, and list of figures.                %
+%                                                                        %
+%      Author: Gregory Alexander Feiden                                  %
+%   Institute: Dartmouth College                                         %
+%        Date: 2014 May 17                                               %
+%                                                                        %
+%     License: Beerware (revision 42)                                    %
+%              ----------------------                                    %
+%              Gregory Feiden wrote this file. As long as you retain     %
+%              this notice you can do whatever you want with this code.  %
+%              If we meet some day and you think this code is worth it,  %
+%              you can buy me a beer in return.                          %
+%                                                                        %
+%------------------------------------------------------------------------%
+
+% Create custom title page to conform to 2013 Dartmouth Graduate Office 
+% standards.
+
+\begin{titlepage}
+ \begin{center}
+  \MakeUppercase{\bf title of your thesis} \\ % Note: Call it what you will.
+  A Thesis                 \\
+  Submitted to the Faculty \\
+  in partial fulfillment of the requirements for the \\
+  degree of              \\
+  Doctor of Philosophy   \\   % Note: Modify to say what degree you're earning.
+  in                     \\
+  Physics and Astronomy  \\   % Note: And in what field.
+  by                     \\
+  First Middle Sirname   \\   % Note: You should change this to your name.
+  DARTMOUTH COLLEGE      \\
+  Hanover, New Hampshire \\
+  \today
+ \end{center}
+ \vspace{\baselineskip}
+ 
+ %\vspace*{0.7in}
+ \vspace*{\fill}
+ 
+ \begin{minipage}[b]{\linewidth}
+ 
+    \begin{flushright}
+        
+        \begin{minipage}[b]{0.45\linewidth}
+            \begin{center}
+                Examining Committee:
+            \end{center}
+            \vspace{0.5in}
+            \hrule \vspace{0.1in}
+            Brian C. Chaboyer (Chair) \\ \vspace{0.3in} % internal #1
+            \hrule \vspace{0.1in}
+            Robert A. Fesen \\ \vspace{0.3in}           % internal #2
+            \hrule \vspace{0.1in}
+            John R. Thorstensen \\ \vspace{0.3in}       % internal #3
+            \hrule \vspace{0.1in} 
+            External E. External                        % external member
+        \end{minipage}
+    \end{flushright}
+ 
+    \begin{flushleft}
+        \vspace*{-0.44in}
+        \singlespacing
+        \begin{minipage}[b]{0.45\linewidth}
+            \hrule \vspace{0.1in}
+            F. Jon Kull \\              % check it's the same person
+            Dean of Graduate Studies
+        \end{minipage}
+    \end{flushleft}
+    
+ \end{minipage}
+ 
+\end{titlepage}
+
+%---BEGIN ROMAN NUMERAL PAGE NUMBERING
+\pagenumbering{roman}
+
+% License page. Choose one wisely. If you're unsure, ask a librarian or 
+% just use the standard copyright.
+\newpage
+\thispagestyle{empty}
+\begin{center}
+    \vspace*{\fill}
+    Copyright \copyright\ \the\year\ by Author A. Author \\ 
+    This work is licensed under the Creative Commons Attribution 3.0 Unported License. \\
+    To view a copy of this license, visit \url{http://creativecommons.org/licenses/by/3.0/}.
+    \vspace*{\fill}
+\end{center}
+
+% Abstract (on new page)
+\newpage
+\input{./pre/tex/abs}
+\addcontentsline{toc}{chapter}{Abstract}
+
+% Preface (including acknowledgements)
+\newpage
+\addcontentsline{toc}{chapter}{Preface}
+\input{./pre/tex/preface}
+
+% THERE IS NO NEED TO CHANGE THIS
+% Table of contents, list of tables + figures
+{
+    \newpage
+    \hypersetup{linkcolor=black}
+    \addcontentsline{toc}{chapter}{Contents}
+    \tableofcontents
+    
+    \newpage
+    \addcontentsline{toc}{chapter}{List of Tables}
+    \listoftables
+
+    \newpage
+    \addcontentsline{toc}{chapter}{List of Figures}
+    \listoffigures
+}

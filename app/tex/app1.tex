@@ -1,0 +1,31 @@
+%------------------------------------------------------------------------%
+% Example appendix section for the thesis template.                      %
+%                                                                        %
+%      Author: Gregory Alexander Feiden                                  %
+%   Institute: Dartmouth College                                         %
+%        Date: 2014 May 17                                               %
+%                                                                        %
+%     License: Beerware (revision 42)                                    %
+%              ----------------------                                    %
+%              Gregory Feiden wrote this file. As long as you retain     %
+%              this notice you can do whatever you want with this code.  %
+%              If we meet some day and you think this code is worth it,  %
+%              you can buy me a beer in return.                          %
+%                                                                        %
+%------------------------------------------------------------------------%
+
+\chapter{Things People May Find Important}
+\label{app:example1}
+
+An example of an appendix with a landscaped long table and a snippet of
+code imported from the {\it original} file.
+
+% Example of code imported from original file.
+\vspace{\baselineskip}
+\onehalfspacing
+\lstinputlisting[language=Fortran,caption=Sample Fortran File using Listings]
+                {/home/gfeiden/evolve/nml/magnetic.nml}
+\doublespacing
+
+% Example of a big table created using longtable environment.
+\input{./app/tab/longtable1.tex}

@@ -1,0 +1,45 @@
+%------------------------------------------------------------------------%
+% Example of a standard table for the thesis template.                   %
+%                                                                        %
+%      Author: Gregory Alexander Feiden                                  %
+%   Institute: Dartmouth College                                         %
+%        Date: 2014 May 17                                               %
+%                                                                        %
+%     License: Beerware (revision 42)                                    %
+%              ----------------------                                    %
+%              Gregory Feiden wrote this file. As long as you retain     %
+%              this notice you can do whatever you want with this code.  %
+%              If we meet some day and you think this code is worth it,  %
+%              you can buy me a beer in return.                          %
+%                                                                        %
+%------------------------------------------------------------------------%
+
+
+\renewcommand{\arraystretch}{1.25}
+\begin{table}[t]
+    \begin{center}
+        \caption[Example of a simple table]
+        {An example table formatted to look rather nice, in my opinion.
+        Note, use the \newline command to get a second line.}
+        \label{tab:ex1}
+        \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} c r c c c c c c c}
+        \hline
+        \hline\noalign{\smallskip}
+        Mass ($\msun$) & [Fe/H] & 0.5 & 1.0 & 2.0 & 3.0 & 4.0 & 5.0 & 10.0 \\
+        \noalign{\smallskip}\hline\noalign{\smallskip}
+        0.15      & $-0.50$ & 0.1561 & 0.1561 & 0.1561 & 0.1561 & 0.1560 & 0.1560 & 0.1560 \\
+        $\vdots$  & $ 0.00$ & 0.1560 & 0.1560 & 0.1560 & 0.1560 & 0.1560 & 0.1560 & 0.1559 \\
+        $\vdots$  & $+0.15$ & 0.1557 & 0.1557 & 0.1557 & 0.1557 & 0.1556 & 0.1556 & 0.1556 \\
+        0.20      & $-0.50$ & 0.1523 & 0.1523 & 0.1522 & 0.1522 & 0.1522 & 0.1522 & 0.1521 \\
+        $\vdots$  & $ 0.00$ & 0.1521 & 0.1521 & 0.1521 & 0.1521 & 0.1521 & 0.1520 & 0.1519 \\
+        $\vdots$  & $+0.15$ & 0.1518 & 0.1517 & 0.1517 & 0.1517 & 0.1517 & 0.1517 & 0.1516 \\
+        0.25      & $-0.50$ & 0.1499 & 0.1498 & 0.1498 & 0.1498 & 0.1498 & 0.1497 & 0.1496 \\
+        $\vdots$  & $ 0.00$ & 0.1496 & 0.1496 & 0.1496 & 0.1496 & 0.1495 & 0.1495 & 0.1494 \\
+        $\vdots$  & $+0.15$ & 0.1496 & 0.1496 & 0.1496 & 0.1495 & 0.1495 & 0.1495 & 0.1493 \\
+        0.30      & $-0.50$ & 0.1482 & 0.1482 & 0.1481 & 0.1481 & 0.1481 & 0.1480 & 0.1479 \\ 
+        $\vdots$  & $ 0.00$ & 0.1480 & 0.1480 & 0.1479 & 0.1479 & 0.1478 & 0.1478 & 0.1477 \\
+        $\vdots$  & $+0.15$ & 0.1479 & 0.1479 & 0.1479 & 0.1478 & 0.1478 & 0.1477 & 0.1476 \\
+        \noalign{\smallskip}\hline
+        \end{tabular*}
+    \end{center}
+\end{table}
