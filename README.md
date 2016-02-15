@@ -10,6 +10,9 @@ and accepted in 2013. Style and formatting there conform to guidelines layed out
 for your own institution. Updated descriptions are available from the 
 [Grad Studies webpage](http://graduate.dartmouth.edu/).
 
+Dependencies
+------------
+Biliography formatting is handled with BibTeX. The style file adopted is an emulator of the Monthly Notices of the Royal Astronomical Society. A version of the style file can be found on [GitHub](https://github.com/timj/mn2e-bst) or on the [webpage of Michael Williams](http://user.astro.columbia.edu/~williams/mn2ebst/).
 
 Citation
 --------
