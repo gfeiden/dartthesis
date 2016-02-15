@@ -10,12 +10,6 @@ and accepted in 2013. Style and formatting there conform to guidelines layed out
 for your own institution. Updated descriptions are available from the 
 [Grad Studies webpage](http://graduate.dartmouth.edu/).
 
-Page Format Details
--------------------
-
-
-Additional Options
-------------------
 
 Citation
 --------
